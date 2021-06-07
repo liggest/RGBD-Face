@@ -1,0 +1,7 @@
+rgb/*
+depth/*
+crop/
+result/
+screenshot/
+
+# intrinsic.json
