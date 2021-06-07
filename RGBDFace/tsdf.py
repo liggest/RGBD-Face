@@ -179,7 +179,7 @@ class TSDFContainer:
             self.setBaseImgPair(colorFile,depthFile)
             return True
         rgbdC2=RGBDContainer(self,colorFile,depthFile)
-        rgbdC2.prepareAll()
+        rgbdC2.prepareAll(cropEyeMouth=self.cropEyeMouth)
         if not rgbdC2.faceFeaturesSuccess:
             print(f"未添加{rgbdC2.colorFile} , {rgbdC2.depthFile}")
             return False
@@ -212,6 +212,7 @@ class TSDFContainer:
         #pltRGBD(rgbd2masked)
         #plt.show()
         self.tsdf.integrate(rgbd2masked,self.intrinsic,trans)
+        print(f"融合 {colorFile} {depthFile}")
         return True
         
     def registerPair(self,rgbdSrc,rgbdTar,points2DSrc,points2DTar,adjacent=False):

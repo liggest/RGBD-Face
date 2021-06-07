@@ -12,7 +12,7 @@ datasets              根目录
 数据样例参见：https://github.com/tencent-ailab/hifi3dface
 拍摄用APP：https://github.com/lxk121lalala/RGBD_data_capture
 
-对于拍得的原始数据，可将其置入数据集目录，使用如下函数
+对于拍得的原始数据，可将其置入数据集目录，使用如下函数整理
 '''
 
 datasetBase="./datasets/"

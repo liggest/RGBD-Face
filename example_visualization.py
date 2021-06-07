@@ -2,8 +2,8 @@ import open3d as o3d
 import numpy as np
 
 '''
-    使用Open3D看模型
-    还能让模型转一转
+使用Open3D看模型
+还能让模型转一转
 '''
 
 def easeIn(x):

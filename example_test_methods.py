@@ -9,8 +9,8 @@ from RGBDFace.utils import get3Dpoints,constructPcdPair,evaluateAndDraw
 from RGBDFace.utils import ICP_p2plane,MultiICP,RANSAC,RGBDOdometry
 
 '''
-    测试位姿估计方法时所用的程序
-    其实这些代码在jupyter notebook里面执行也不错……
+测试位姿估计方法时所用的程序
+推荐在jupyter notebook中执行
 '''
 
 @dataclass
